@@ -49,6 +49,11 @@
         }
 }
 
+.tintanium-titulo,
+.adamantium-titulo {
+    margin-top: 4rem;
+}
+
 .card__aluminio {
     display: flex;
     justify-content: center;
@@ -109,6 +114,11 @@
             color: $cor-titulo;
             
         }
+
+        &:hover .mensal {
+            color: $cor-titulo;
+            transition: all .4s;
+        }
 }
 
 .card__selo {
@@ -129,10 +139,17 @@
     margin: 1rem auto;
 }
 
+.mensal {
+    font-family: $fonte-menu;
+    color: $cor-corpo;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+}
 
 .card__mensal {
     font-family: $fonte-corpo;
-    color: #fff;
+    color: $cor-corpo;
     font-size: 3rem;
     text-align: center;
 }

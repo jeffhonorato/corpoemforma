@@ -1,0 +1,66 @@
+.sobre {
+    height: 120vh;
+    background-image: url("../img/sobre/background-sobre.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+
+        @include celular {
+            height: 150vh;
+        }
+}
+
+.sobre__box {
+    height: 100%;
+    width: 500px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+        @include celular {
+            width: 300px;
+            margin-left: 10px;
+        }
+    
+}
+
+.sobre__img {
+    width: 340px;
+
+        @include celular {
+            width: 280px;
+        }
+}
+
+.sobre__info {
+    text-align: center;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 4px 0px 10px $cor-corpo;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    padding: .6rem;
+
+        &:hover {
+            box-shadow: 2px 2px 20px $cor-corpo;
+            transition: all .4s; 
+            background-color: #fff;
+        }
+
+}
+
+.sobre__info--titulo {
+    font-family: $fonte-titulo;
+    padding: .5rem 0rem;
+    font-size: 2rem;
+}
+
+.sobre__info--p {
+    padding: .5rem;
+    text-align: start;
+    font-family: $fonte-corpo;
+    font-weight: bold;
+}

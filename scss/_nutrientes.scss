@@ -1,0 +1,183 @@
+.nutrientes {
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)),
+    
+    url("../img/nutrientes/nutrientes-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 105vh;
+
+        @include celular {
+            height: 80vh;;
+        }
+}
+
+.nutri__titulo {
+    font-size: 2.9rem;
+    font-family: $fonte-menu;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 4rem;
+    color: $cor-corpo;
+
+        @include celular {
+            font-size: 2rem;
+        }
+}
+
+.nutri__cards--box {
+    display: grid;
+    grid-template-columns: 140px 140px 140px 140px;
+    justify-content: center;
+    justify-items: center;
+    gap: 1rem;
+
+        @include celular {
+            grid-template-columns: 140px 140px;
+            gap: .4rem;   
+        }
+}
+
+.nutri__ico--fecharModal {
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    cursor: pointer;
+
+        &:hover {
+            width: 47px;
+            transition: all .5s;
+        }
+
+        @include celular {
+            width: 35px;
+            right: 8px;
+        }
+}
+
+.nutri__card {
+    background-color: $cor-corpo;
+    width: 140px;
+    border-radius: 20%;
+    padding: .3rem;
+    box-shadow: 1px 1px 10px #fff;
+
+        &:hover {
+            background-color: #fff;
+            transition: all .5s;
+            cursor: pointer;
+            box-shadow: 1px 1px 10px $cor-titulo;
+        }
+
+        @include celular {
+            width: 120px;
+        }
+}
+
+.nutri__card--nome {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: $fonte-titulo;
+    font-size: 1.5rem;
+
+
+}
+
+.whey .nutri__card--nome {
+    font-size: 1.2rem;
+}
+
+/********* Modal *********/
+.nutri__modal--box {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 1rem;
+    overflow-y: auto;
+    display: none;
+    animation: slidein 1s forwards;
+}
+
+.nutri__modal--box.ativo {
+    display: block;
+}
+
+.nutri__modal--bloco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+
+        @include celular {
+            grid-template-columns: 1fr;
+            justify-items: start;
+        }
+}
+
+.nutri__modal--picture {
+    margin-top: 3rem;
+}
+
+.nutri__modal--img {
+    width: 350px;
+
+        @include celular {
+            width: 320px;
+            margin-bottom: 2rem;
+        }
+}
+
+.nutri__modal--info {
+    width: 500px;
+    margin: 3rem 0rem;
+
+        @include celular {
+            width: 320px;
+        }
+}
+
+.modal__proteina--titulo {
+    font-family: $fonte-titulo;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.modal__proteina--p {
+    font-family: $fonte-corpo;
+    padding: .5rem;
+}
+
+.modal__pro--lista::before {
+    content: "🏋️";
+    margin-right: 4px;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.modal__proteina--lista {
+    max-width: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0rem .5rem;
+
+        @include celular {
+            max-width: 320px;
+        }
+
+}

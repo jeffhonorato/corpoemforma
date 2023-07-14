@@ -1,0 +1,139 @@
+.suplemento {
+    height: 140vh;
+
+    background: linear-gradient(
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)),
+
+   url("../img/suplementos/background-suplementos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+        @include celular {
+            height: 100vh;
+        }
+}
+
+.suple__titulo {
+    font-family: $fonte-menu;
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 2.5rem;
+    color: $cor-corpo;
+
+        @include celular {
+            font-size: 1.8rem;
+        }
+}
+
+.suple__box {
+    display: grid;
+    place-content: center;
+}
+
+.suple__cards {
+    display: grid;
+    justify-content: center;
+}
+
+.suple__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem .5rem;
+    width: 360px;
+    height: 470px;
+    background: rgba( 255, 255, 255, 0.55);
+    box-shadow: 0px 0px 10px $cor-corpo;
+    backdrop-filter: blur( 0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18);
+    
+        @include celular {
+            width: 320px;
+        }
+
+        &:hover {
+            background: #fff;
+            transition: all .5s;
+            box-shadow: 0px 0px 20px $cor-corpo;
+        }
+}
+
+.suple__card--img {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.pre-treino {
+    width: 160px;
+}
+
+.suple__card--titulo {
+    font-family: $fonte-titulo;
+    margin-bottom: .8rem;
+    font-size: 1.8rem;
+
+}
+
+.suple__card--info {
+    margin-bottom: .8rem;
+}
+
+.suple__card--p {
+    font-family: $fonte-corpo;
+}
+
+.suple__card--valor {
+    font-family: $fonte-titulo;
+    font-size: 2rem;
+}
+
+.suple__card--juros {
+    font-family: $fonte-corpo;
+    font-size: .8rem;
+    margin-bottom: 1.4rem;
+}
+
+.suple__card--link {
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 65px); 
+
+    background-color: $cor-titulo;
+    padding: .5rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    color: #fff;
+    font-family: $fonte-menu;
+    border: 1px solid #fff;
+
+        &:hover {
+            background-color: $cor-corpo;
+            transition: all .5s;
+            color: #000;
+            border: 1px solid #000;
+        }
+}
+
+.link-barra {
+    margin-bottom: 1.4rem;
+}
+
+
+/* SWIPER SLIDER */
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 380px;
+    height: 470px;
+  }

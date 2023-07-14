@@ -1,0 +1,70 @@
+/********* VARIÁVEIS *********/
+$fonte-titulo: 'Advent Pro', sans-serif;
+$fonte-menu: 'Viga', sans-serif;
+$fonte-corpo: 'Jura', sans-serif;
+$cor-titulo: #B81F00;
+$cor-corpo: #DBDB43;
+
+/********* CONFIGURAÇÃO *********/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.js-scroll {
+    overflow: auto;
+}
+
+.js-scroll.off {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/********* MIXINS *********/
+@mixin celular {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 480px) and (max-width:800px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 800px) and (max-width: 2400px) {
+        @content;
+    }
+}
+
+
+/********* PÁGINA *********/
+@import "header";
+@import "planos";
+@import "instrutores";
+@import "treinos";
+@import "nutrientes";
+@import "suplementos";
+@import "estrutura";
+@import "sobre";
+@import "footer";
+@import "desenvolvedor";

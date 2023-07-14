@@ -1,0 +1,223 @@
+.planos {
+    background-image: url("../img/planos/background-planos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-bottom: 4rem;
+}
+
+.planos__cabecalho {
+    padding: 2rem;
+    text-align: center;
+}
+
+.aluminio {
+    margin-bottom: 6rem;
+}
+
+.planos__titulo {
+    font-family: $fonte-menu;
+    font-size: 3rem;
+    color: #DBDB43;
+
+        @include celular {
+            font-size: 2rem;
+        }
+}
+
+.planos__subtitulo {
+    font-family: $fonte-menu;
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 4rem;
+
+        @include celular {
+            font-size: 1.5rem;
+        }
+}
+
+.planos__card--titulo {
+    font-family: $fonte-corpo;
+    color: $cor-corpo;
+    font-size: 2.7rem;
+    text-align: center;
+    margin-bottom: 2rem;
+
+        @include celular {
+            font-size: 2.4rem;
+        }
+}
+
+.card__aluminio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 2px 2px 15px $cor-titulo;
+    width: 320px;
+    padding: 1rem .5rem;
+    border: 1px solid rgba(219, 219, 67, 1);
+    border-bottom-right-radius: 10%;
+    position: relative;
+
+        &:hover {
+            box-shadow: 2px 2px 20px $cor-titulo;
+            transition: all .5s;
+            background: linear-gradient(40deg, #DBDB43, #fff);
+        }
+
+        &:hover .card__mensal {
+            color: $cor-titulo;
+            font-weight: bold;
+        }
+
+        &:hover .card__acesso {
+            color: #000;
+            font-weight: bold;
+        }
+
+        &:hover .card__instrutor {
+            color: #000;
+            font-weight: bold;
+        }
+
+        &:hover .card__ficha {
+            color: #000;
+            font-weight: bold;
+        }
+
+        &:hover .card__esteira {
+            color: #000;
+            font-weight: bold;
+        }
+
+        &:hover .card__btn--box {
+            background: #B81F00;
+        }
+
+        &:hover .card__mensal--promo {
+            color: #000;
+            font-weight: bold;
+        }
+
+        &:hover .card__mensal--semestre {
+            color: $cor-titulo;
+            
+        }
+}
+
+.card__selo {
+    width: 100px;
+    position: absolute;
+    top: -30px;
+    right: -40px;
+
+        @include celular {
+            top: -20px;
+            right: -20px;
+            width: 90px;
+        }
+}
+
+.card__icone-plano {
+    width: 120px;
+    margin: 1rem auto;
+}
+
+
+.card__mensal {
+    font-family: $fonte-corpo;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.card__mensal--promo {
+    font-family: $fonte-corpo;
+    color: #fff;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.card__mensal--semestre {
+    font-family: $fonte-menu;
+    color: $cor-corpo;
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.card__acesso--box,
+.card__instrutor--box,
+.card__ficha--box,
+.card__esteira--box,
+.card__btn--box {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    padding: .3rem;
+
+}
+
+.card__ico {
+    width: 30px;
+}
+
+.card__acesso,
+.card__instrutor,
+.card__ficha,
+.card__esteira,
+.card__faleConosco {
+    font-family: $fonte-corpo;
+    color: #fff;
+    text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+            transition:  all .4s;
+            color: $cor-corpo;
+        }
+}
+
+.card__faleConosco {
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+    
+        &:hover {
+            text-decoration: underline;
+            transition:  all .4s;
+            color: $cor-corpo;
+        }
+}
+
+.card__icone--whatsapp {
+    width: 30px;
+}
+
+.card__btn--box {
+    background: rgba(219, 219, 67, .2);
+    // border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.5px);
+    -webkit-backdrop-filter: blur(3.5px);
+    border: 1px solid rgba(219, 219, 67, 1);
+    margin-top: 1rem;
+    width: 250px;
+    cursor: pointer;
+    margin: 2rem auto;
+    justify-content: center;
+    padding: .5rem;
+    border-bottom-right-radius: 20%;
+
+        &:hover {
+            background-color: #000;
+            transition: all .4s;
+        }
+}
+

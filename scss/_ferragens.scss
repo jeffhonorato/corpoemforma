@@ -97,12 +97,41 @@
 
     /******* FERRAGENS MODAL *********/
     .ferragens__modal {
-
+        
     }
 
     .ferragens__modal--titulo {
         font-size: 3rem;
         font-family: $fonte-menu;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    .ferragens__menu {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .ferragens__menu-a {
+        background-color: $cor-titulo;
+        padding: .5rem;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: $fonte-menu;
+        border: 2px solid #000;
+        cursor: pointer;
+        width: 120px;
+        text-align: center;
+
+        &:hover {
+            background-color: $cor-corpo;
+            color: #000;
+        }
     }
 
     .ferragens__modal--cards {
@@ -113,8 +142,10 @@
     }
 
     .ferragens__modal--card {
-        width: 420px;
+        width: 400px;
         border-radius: 12px;
+        box-shadow: 1px 1px 5px 1px $cor-titulo;
+        padding: 1.5rem;
 
         @include celular {
             width: 350px;
@@ -135,8 +166,8 @@
     }
 
     .ferragens__acordion {
-        width: 400px;
-        margin-left: 2rem;
+        // width: 400px;
+        margin: 0 auto;
         background-color: $cor-titulo;
         border-radius: 12px;
         cursor: pointer;

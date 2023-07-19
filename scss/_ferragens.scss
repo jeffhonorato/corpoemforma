@@ -97,7 +97,7 @@
 
     /******* FERRAGENS MODAL *********/
     .ferragens__modal {
-        
+
     }
 
     .ferragens__modal--titulo {
@@ -166,17 +166,15 @@
     }
 
     .ferragens__acordion {
-        // width: 400px;
-        margin: 0 auto;
         background-color: $cor-titulo;
         border-radius: 12px;
         cursor: pointer;
         padding-bottom: 1rem;
 
-        @include celular {
-            width: 350px;
-            margin: 0 auto;
-        }
+        // @include celular {
+        //     width: 350px;
+        //     margin: 0 auto;
+        // }
 
         &:hover {
             background-color: #000;

@@ -46,6 +46,24 @@
         }
     }
 
+    .ferragens__btns {
+        display: flex;
+        gap: 1rem;
+        justify-content: start;
+
+        @include celular {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+    }
+
+    .ferragens__btn-whatsImg {
+        width: 30px;
+    }
+
+    
+
     .btn__ferragens {
     background-color: $cor-titulo;
     padding: .5rem;
@@ -57,6 +75,8 @@
     cursor: pointer;
     width: 120px;
     text-align: center;
+    display: flex;
+    gap: .2rem;
 
         &:hover {
             background-color: $cor-corpo;
@@ -69,6 +89,10 @@
             margin: 0 auto;
         }
 
+    }
+
+    .saibaMais {
+        width: 150px;
     }
 
 }

@@ -1,7 +1,6 @@
 .ferragens {
 
     padding: 2rem 0;
-    height: 180vh;
 
 
     .ferragens__titulo {
@@ -107,12 +106,19 @@
     }
 
     .ferragens__modal--cards {
-
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
     }
 
     .ferragens__modal--card {
         width: 420px;
         border-radius: 12px;
+
+        @include celular {
+            width: 350px;
+        }
     }
 
     .maquina-img-div {
@@ -122,6 +128,10 @@
 
     .maquina-img {
         width: 400px;
+
+        @include celular {
+            width: 340px;
+        }
     }
 
     .ferragens__acordion {
@@ -131,6 +141,11 @@
         border-radius: 12px;
         cursor: pointer;
         padding-bottom: 1rem;
+
+        @include celular {
+            width: 350px;
+            margin: 0 auto;
+        }
 
         &:hover {
             background-color: #000;
@@ -169,6 +184,7 @@
         font-family: $fonte-corpo;
         font-size: 1rem;
         color: #fff;
+        margin-bottom: 1rem;
     }
 
     .ferragens__acordion--btns {

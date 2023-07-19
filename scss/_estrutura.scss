@@ -12,6 +12,10 @@
         @include celular {
             height: 70vh;
         }
+
+        @include tablet {
+            height: 80vh;
+        }
 }
 
 .estrutura__titulo {

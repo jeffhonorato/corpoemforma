@@ -9,6 +9,10 @@
     @include celular {
         height: 85vh;
     }
+
+    @include tablet {
+        height: 70vh;
+    }
     
 }
 

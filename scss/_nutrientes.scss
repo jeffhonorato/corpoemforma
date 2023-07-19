@@ -13,6 +13,10 @@
         @include celular {
             height: 80vh;;
         }
+
+        @include tablet {
+            height: 50vh;;
+        }
 }
 
 .nutri__titulo {

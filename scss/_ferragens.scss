@@ -1,6 +1,7 @@
 .ferragens {
 
     padding: 2rem 0;
+    height: 180vh;
 
 
     .ferragens__titulo {
@@ -95,4 +96,101 @@
         width: 150px;
     }
 
+    /******* FERRAGENS MODAL *********/
+    .ferragens__modal {
+
+    }
+
+    .ferragens__modal--titulo {
+        font-size: 3rem;
+        font-family: $fonte-menu;
+    }
+
+    .ferragens__modal--cards {
+
+    }
+
+    .ferragens__modal--card {
+        width: 420px;
+        border-radius: 12px;
+    }
+
+    .maquina-img-div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .maquina-img {
+        width: 400px;
+    }
+
+    .ferragens__acordion {
+        width: 400px;
+        margin-left: 2rem;
+        background-color: $cor-titulo;
+        border-radius: 12px;
+        cursor: pointer;
+        padding-bottom: 1rem;
+
+        &:hover {
+            background-color: #000;
+            transition: all .5s;
+        }
+
+        &:hover .ferragens__acordion--titulo {
+            color: #fff;
+        }
+
+        &:hover .ferragens__acordion--info {
+            color: #fff;
+        }
+    }
+
+    .ferragens__acordion--titulo {
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: $fonte-menu;
+        padding: .5rem;
+        
+    }
+
+    .ferragens__acordion--info {
+        padding: .5rem;
+    }
+
+    .ferragens__acordion--info-h3 {
+        font-family: $fonte-corpo;
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .ferragens__acordion--info-p {
+        font-family: $fonte-corpo;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    .ferragens__acordion--btns {
+        display: flex;
+        justify-content: center;
+    }
+
+    .ferragens__acordion--btn {
+        background-color: $cor-titulo;
+        padding: .5rem;
+        border-radius: 4px;
+        font-size: 1.2rem;
+        color: #fff;
+        font-family: $fonte-menu;
+        border: 2px solid #000;
+        cursor: pointer;
+        width: 120px;
+        text-align: center;
+
+        &:hover {
+            border: 2px solid #fff;
+        }
+    }
 }
+

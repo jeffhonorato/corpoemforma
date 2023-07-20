@@ -157,6 +157,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        gap: .5rem;
     }
 
     .ferragens__imgsPeq {
@@ -194,6 +195,7 @@
         border-radius: 12px;
         cursor: pointer;
         padding-bottom: 1rem;
+        margin-top: 1rem;
 
         // @include celular {
         //     width: 350px;

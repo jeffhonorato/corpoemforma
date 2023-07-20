@@ -2,10 +2,9 @@ const modalBiceps = () => {
     const btnTreino = document.querySelector(".js-btn-biceps");
     const modalBox = document.querySelector(".js-modal-biceps");
    
-    
     btnTreino.addEventListener("click", () => {
         modalBox.classList.add("ativo");
-        const scroll= document.querySelector(".js-scroll");
+        const scroll = document.querySelector(".js-scroll");
         scroll.classList.add("off");
         const menu = document.querySelector(".js-menu-mobile");
         menu.classList.add("desativar");
@@ -19,6 +18,10 @@ const modalBiceps = () => {
         const menu = document.querySelector(".js-menu-mobile");
         menu.classList.remove("desativar");
     });
+
+   const modalFilho = document.querySelector(".js-modal");
+   console.log(modalFilho)
+
 };
 
 const modalTriceps = () => {
@@ -28,7 +31,7 @@ const modalTriceps = () => {
     
     btnTreino.addEventListener("click", () => {
         modalBox.classList.add("ativo");
-        const scroll= document.querySelector(".js-scroll");
+        const scroll = document.querySelector(".js-scroll");
         scroll.classList.add("off");
         const menu1 = document.querySelector(".js-menu-mobile");
         menu1.classList.add("desativar");

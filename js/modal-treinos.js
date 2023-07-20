@@ -10,17 +10,20 @@ const modalBiceps = () => {
         menu.classList.add("desativar");
     });
 
-    const btnFechar = document.querySelector(".js-btn-fecharBiceps");
-        btnFechar.addEventListener("click", () => {
-        modalBox.classList.remove("ativo");
-        const scroll = document.querySelector(".js-scroll");
-        scroll.classList.remove("off");
-        const menu = document.querySelector(".js-menu-mobile");
-        menu.classList.remove("desativar");
-    });
+    modalBox.addEventListener("click", (e) => {
+        if(e.target.id == "js-btn-fecharBiceps" || e.target.id == "js-modal-biceps") {
+            modalBox.classList.remove("ativo");
+            const scroll = document.querySelector(".js-scroll");
+            scroll.classList.remove("off");
+            const menu = document.querySelector(".js-menu-mobile");
+            menu.classList.remove("desativar");
+        } 
+    })
 
-   const modalFilho = document.querySelector(".js-modal");
-   console.log(modalFilho)
+ 
+
+    
+    
 
 };
 
@@ -37,14 +40,15 @@ const modalTriceps = () => {
         menu1.classList.add("desativar");
     });
 
-    const btnFechar = document.querySelector(".js-btn-fecharTriceps");
-        btnFechar.addEventListener("click", () => {
-        modalBox.classList.remove("ativo");
-        const scroll = document.querySelector(".js-scroll");
-        scroll.classList.remove("off");
-        const menu1 = document.querySelector(".js-menu-mobile");
-        menu1.classList.remove("desativar");
-    });
+    modalBox.addEventListener("click", (e) => {
+        if(e.target.id == "js-btn-fecharTriceps" || e.target.id == "js-modal-triceps") {
+            modalBox.classList.remove("ativo");
+            const scroll = document.querySelector(".js-scroll");
+            scroll.classList.remove("off");
+            const menu = document.querySelector(".js-menu-mobile");
+            menu.classList.remove("desativar");
+        } 
+    })
 };
 
 const modalOmbro = () => {
@@ -60,14 +64,15 @@ const modalOmbro = () => {
         menu3.classList.add("desativar");
     });
 
-    const btnFechar = document.querySelector(".js-btn-fecharOmbro");
-        btnFechar.addEventListener("click", () => {
-        modalBox.classList.remove("ativo");
-        const scroll = document.querySelector(".js-scroll");
-        scroll.classList.remove("off");
-        const menu3 = document.querySelector(".js-menu-mobile");
-        menu3.classList.remove("desativar");
-    });
+    modalBox.addEventListener("click", (e) => {
+        if(e.target.id == "js-btn-fecharOmbro" || e.target.id == "js-modal-ombro") {
+            modalBox.classList.remove("ativo");
+            const scroll = document.querySelector(".js-scroll");
+            scroll.classList.remove("off");
+            const menu = document.querySelector(".js-menu-mobile");
+            menu.classList.remove("desativar");
+        } 
+    })
 };
 
 const modalPeito = () => {
@@ -83,14 +88,15 @@ const modalPeito = () => {
         menu4.classList.add("desativar");
     });
 
-    const btnFechar = document.querySelector(".js-btn-fecharPeito");
-        btnFechar.addEventListener("click", () => {
-        modalBox.classList.remove("ativo");
-        const scroll = document.querySelector(".js-scroll");
-        scroll.classList.remove("off");
-        const menu4 = document.querySelector(".js-menu-mobile");
-        menu4.classList.remove("desativar");
-    });
+    modalBox.addEventListener("click", (e) => {
+        if(e.target.id == "js-btn-fecharPeito" || e.target.id == "js-modal-peito") {
+            modalBox.classList.remove("ativo");
+            const scroll = document.querySelector(".js-scroll");
+            scroll.classList.remove("off");
+            const menu = document.querySelector(".js-menu-mobile");
+            menu.classList.remove("desativar");
+        } 
+    })
 };
 
 const modalPernas = () => {
@@ -106,14 +112,15 @@ const modalPernas = () => {
         menu5.classList.add("desativar");
     });
 
-    const btnFechar = document.querySelector(".js-btn-fecharPernas");
-        btnFechar.addEventListener("click", () => {
-        modalBox.classList.remove("ativo");
-        const scroll = document.querySelector(".js-scroll");
-        scroll.classList.remove("off");
-        const menu5 = document.querySelector(".js-menu-mobile");
-        menu5.classList.remove("desativar");
-    });
+    modalBox.addEventListener("click", (e) => {
+        if(e.target.id == "js-btn-fecharPernas" || e.target.id == "js-modal-pernas") {
+            modalBox.classList.remove("ativo");
+            const scroll = document.querySelector(".js-scroll");
+            scroll.classList.remove("off");
+            const menu = document.querySelector(".js-menu-mobile");
+            menu.classList.remove("desativar");
+        } 
+    })
 };
 
 const modalCosta = () => {
@@ -129,14 +136,15 @@ const modalCosta = () => {
         menu6.classList.add("desativar");
     });
 
-    const btnFechar = document.querySelector(".js-btn-fecharCosta");
-        btnFechar.addEventListener("click", () => {
-        modalBox.classList.remove("ativo");
-        const scroll = document.querySelector(".js-scroll");
-        scroll.classList.remove("off");
-        const menu6 = document.querySelector(".js-menu-mobile");
-        menu6.classList.remove("desativar");
-    });
+    modalBox.addEventListener("click", (e) => {
+        if(e.target.id == "js-btn-fecharCosta" || e.target.id == "js-modal-costas") {
+            modalBox.classList.remove("ativo");
+            const scroll = document.querySelector(".js-scroll");
+            scroll.classList.remove("off");
+            const menu = document.querySelector(".js-menu-mobile");
+            menu.classList.remove("desativar");
+        } 
+    })
 };
 
 modalBiceps();

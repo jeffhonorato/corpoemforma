@@ -148,22 +148,46 @@
         padding: 1.5rem;
 
         @include celular {
-            width: 350px;
+            width: 360px;
+            padding: .5rem;
         }
     }
 
-    .maquina-img-div {
+    .ferragens__card--imgs {
         display: flex;
         justify-content: center;
+        align-items: center;
     }
 
-    .maquina-img {
-        width: 400px;
+    .ferragens__imgsPeq {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
 
-        @include celular {
-            width: 340px;
+        
+    }
+
+    .ferragens__card1-img-peq {
+        width: 60px;
+        border: 1px solid #000;
+        border-radius: 8px;
+        opacity: .6;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+            transition: all .4s;
         }
     }
+
+    .ferragens__card1-img-gra {
+        width: 300px;
+
+        @include celular {
+            width: 280px;
+        }
+    }
+ 
 
     .ferragens__acordion {
         background-color: $cor-titulo;

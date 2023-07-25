@@ -96,6 +96,11 @@
             display: grid;
         }
 
+        
+        .js-body.desativo {
+            display: grid;
+        }
+
         @keyframes show {
             from {
                 margin-left: 100%;

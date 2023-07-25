@@ -42,12 +42,13 @@
 }
 
 #estrutura__picture {
-    width: 600px;
+    width: 550px;
     height: 400px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 
         @include celular {
             width: 320px;
@@ -58,9 +59,11 @@
         }
 }
 
-// .estrutura__img {
-//     width: 500px;
-// }
+.estrutura__img {
+    border-radius: 12px;
+    box-shadow: 1px 1px 5px 1px $cor-corpo;
+}
+
 
 
 

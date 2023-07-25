@@ -1,5 +1,5 @@
 .header {
-    background-image: url("../img/background-header2.jpg");
+    background-image: url("../img/background.jpg");
     height: 130vh;
     // background-attachment: fixed;
     background-position: center;
@@ -18,41 +18,30 @@
 
         }
 
-        .logo {
-            @include celular {
-                width: 100%;
-                background-color: aqua;
-                display: flex;
-                justify-content: center;
-            }
-        }
-
         .img__logo {
-            width: 300px; /* 150px */
-            margin: 0 auto;
+            width: 350px; /* 150px */
             position: absolute;
-            top: 0px;
-            left: 0px;
+            top: 70px;
+            left: 20px;
 
                 @include celular {
-                    width: 160px;
+                    width: 210px;
                     position: absolute;
-                    top: 0px;
-                    left: -6px;
-                    
+                    top: 100px;
+                    left: 0px;
                 }
 
                 @include tablet {
-                    width: 200px;
+                    width: 340px;
                     position: absolute;
-                    top: 0px;
-                    left: 0px;
+                    top: 90px;
+                    left: 30px;
                 }
                 
         }
 
         .menu__mobile {
-            width: 70px;
+            width: 50px;
             position: fixed;
             top: 40px;
             right: 12px;
@@ -83,8 +72,8 @@
             gap: .7rem;
             
             position: fixed;
-            top: 105px;
-            right: 0px;
+            top: 85px;
+            right: -10px;
             display: none;
             animation: show 1s forwards;
             padding: 1rem;
@@ -94,6 +83,11 @@
 
                 @include celular {
                     top: 100px;
+                    right: -10px;
+                }
+
+                @include tablet {
+                    top: 105px;
                     right: -10px;
                 }
         }

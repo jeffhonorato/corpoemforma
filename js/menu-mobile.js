@@ -6,9 +6,9 @@ menuMobile.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 });
 
-body.addEventListener("click", () => {
-    if(navMenu.classList.toggle("show")) {
-        return true;
-    }
-})
+// body.addEventListener("click", () => {
+//     if(navMenu.classList.toggle("show")) {
+//         return true;
+//     }
+// })
 

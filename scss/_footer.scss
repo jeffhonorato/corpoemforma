@@ -114,9 +114,20 @@
 
 .sabado {
     margin-top: .7rem;
+    
 }
 
 .contato__horario--semana {
     padding: .2rem;
+    font-size: 1.3rem;
+    font-family: $fonte-corpo;
+    text-align: center;
+}
+
+.contato__horario--semana strong {
+    padding: .2rem;
+    font-size: 1.3rem;
+    font-family: $fonte-menu;
+    text-align: center;
 }
 

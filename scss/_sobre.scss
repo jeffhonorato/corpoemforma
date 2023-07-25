@@ -7,7 +7,7 @@
     // background-attachment: fixed;
 
         @include celular {
-            height: 150vh;
+            height: 100vh;
         }
 }
 
@@ -46,6 +46,10 @@
     padding: .6rem;
     overflow: hidden;
     overflow-y: scroll;
+
+        @include celular {
+            max-height: 400px;
+        }
 
         @include celular {
             .sobre__info::-webkit-scrollbar {

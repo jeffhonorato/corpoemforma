@@ -1,5 +1,7 @@
 .ferragens {
 
+
+
     padding: 2rem 0;
 
 
@@ -62,8 +64,6 @@
         width: 30px;
     }
 
-    
-
     .btn__ferragens {
     background-color: $cor-titulo;
     padding: .5rem;
@@ -97,14 +97,25 @@
 
     /******* FERRAGENS MODAL *********/
     .ferragens__modal {
-
+        background: linear-gradient(
+            rgba(0,0,0, .8),
+            rgba(0,0,0, .8)),
+            
+            url("../img/ferragens/background-ferragens.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
     }
 
     .ferragens__modal--titulo {
         font-size: 3rem;
         font-family: $fonte-menu;
         text-align: center;
-        margin-bottom: 3rem;
+        margin: 3rem 0rem;
+        padding-top: 3rem;
+        color: #fff;
+
     }
 
     .ferragens__menu {
@@ -113,7 +124,7 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        margin-bottom: 4rem;
+        margin-bottom: 1rem;
     }
 
     .ferragens__menu-a {
@@ -134,22 +145,18 @@
         }
     }
 
-    .ferragens__modal--cards {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-    }
-
     .ferragens__modal--card {
         width: 400px;
         border-radius: 12px;
         box-shadow: 1px 1px 5px 1px $cor-titulo;
         padding: 1.5rem;
+        background-color: #c1c1c1;
+       
 
         @include celular {
             width: 360px;
             padding: .5rem;
+            margin: 0 auto;
         }
     }
 
@@ -263,5 +270,23 @@
             border: 2px solid #fff;
         }
     }
+
+    /* SWIPER JS */
+    .swiper {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+
+      .div-swiper-slider {
+        height: 120vh;
+      }
+  
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 300px;
+      }
 }
 

@@ -145,6 +145,10 @@
         }
     }
 
+    .ferragens__modal--cards {
+
+    }
+
     .ferragens__modal--card {
         width: 400px;
         border-radius: 12px;
@@ -156,7 +160,6 @@
         @include celular {
             width: 360px;
             padding: .5rem;
-            margin: 0 auto;
         }
     }
 
@@ -280,6 +283,11 @@
 
       .div-swiper-slider {
         height: 110vh;
+        background-color: aqua;
+
+        @include celular {
+            height: 82vh;
+        }
       }
   
       .swiper-slide {

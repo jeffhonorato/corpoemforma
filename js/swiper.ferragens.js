@@ -8,7 +8,6 @@ var swiper = new Swiper(".mySwiper", {
       stretch: 10,
       depth: 70,
       modifier: 1,
-      slideShadows: false,
     },
     navigation: {
         nextEl: ".swiper-button-next",

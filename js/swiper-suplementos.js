@@ -1,9 +1,7 @@
 var swiper = new Swiper(".suplementos-box", {
     effect: "coverflow",
     grabCursor: true,
-    centeredSlides: true,
     slidesPerView: "auto",
-    // loop: "true",
     coverflowEffect: {
       rotate: 50,
       stretch: 0,

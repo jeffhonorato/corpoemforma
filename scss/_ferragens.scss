@@ -1,8 +1,5 @@
 .ferragens {
-
-
-
-    padding: 2rem 0;
+    // padding: 2rem 0;
 
 
     .ferragens__titulo {
@@ -145,10 +142,6 @@
         }
     }
 
-    .ferragens__modal--cards {
-
-    }
-
     .ferragens__modal--card {
         width: 400px;
         border-radius: 12px;
@@ -283,18 +276,11 @@
 
       .div-swiper-slider {
         height: 110vh;
-        background-color: aqua;
 
         @include celular {
             height: 82vh;
         }
       }
-  
-      .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 300px;
-      }
+
 }
 

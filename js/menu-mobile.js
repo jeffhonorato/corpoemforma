@@ -6,9 +6,9 @@ menuMobile.addEventListener("click", () => {
     navMenu.classList.toggle("show");
 });
 
-// body.addEventListener("click", () => {
-//     if(navMenu.classList.toggle("show")) {
-//         return true;
-//     }
-// })
+// body.addEventListener("click", (e) => {
+//     if(e.target.id=="js-body" || e.target.id=="js-ico-menu-mobile") {
+//         navMenu.classList.remove("show");
+//     };
+// });
 

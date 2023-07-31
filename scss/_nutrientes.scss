@@ -112,6 +112,7 @@
     overflow-y: auto;
     display: none;
     animation: slidein 1s forwards;
+    z-index: 10;
 }
 
 .nutri__modal--box.ativo {

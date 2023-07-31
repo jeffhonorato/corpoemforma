@@ -91,6 +91,7 @@
     display: none;
     place-content: center; 
     animation: slidein 1s forwards;
+    z-index: 10;
 }
 
 .treino__modal--box.ativo {

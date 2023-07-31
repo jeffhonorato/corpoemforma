@@ -2,12 +2,11 @@ const modalBiceps = () => {
     const btnTreino = document.querySelector(".js-btn-biceps");
     const modalBox = document.querySelector(".js-modal-biceps");
    
+   
     btnTreino.addEventListener("click", () => {
         modalBox.classList.add("ativo");
         const scroll = document.querySelector(".js-scroll");
         scroll.classList.add("off");
-        const menu = document.querySelector(".js-menu-mobile");
-        menu.classList.add("desativar");
     });
 
     modalBox.addEventListener("click", (e) => {
@@ -19,12 +18,6 @@ const modalBiceps = () => {
             menu.classList.remove("desativar");
         } 
     })
-
- 
-
-    
-    
-
 };
 
 const modalTriceps = () => {

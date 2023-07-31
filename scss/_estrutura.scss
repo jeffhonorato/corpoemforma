@@ -10,7 +10,7 @@
     background-size: cover;
 
         @include celular {
-            height: 65vh;
+            height: 80vh;
         }
 
         @include tablet {
@@ -29,6 +29,7 @@
         @include celular {
             margin-bottom: 0rem;
             font-size: 2rem;
+            padding: 3rem 0;
             
         }
 }

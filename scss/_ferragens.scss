@@ -1,6 +1,4 @@
 .ferragens {
-    // padding: 2rem 0;
-
 
     .ferragens__titulo {
         font-size: 4rem;
@@ -27,7 +25,7 @@
     .ferragens__info--h3 {
         font-size: 3rem;
         font-family: $fonte-titulo;
-        margin-bottom: 1rem;
+        margin: 2rem 0;
 
         @include celular {
            text-align: center;
@@ -53,7 +51,8 @@
         @include celular {
             display: flex;
             gap: 1rem;
-            justify-content: center;
+            justify-content: start;
+            margin-left: 1rem;
         }
     }
 
@@ -151,9 +150,9 @@
        
 
         @include celular {
-            width: 350px;
-            padding: .5rem;
-            margin-left: .8rem;
+            width: 360px;
+            padding: 1rem;
+            margin-left: 4.2rem;
         }
     }
 
@@ -200,11 +199,6 @@
         cursor: pointer;
         padding-bottom: 1rem;
         margin-top: 1rem;
-
-        // @include celular {
-        //     width: 350px;
-        //     margin: 0 auto;
-        // }
 
         &:hover {
             background-color: #000;

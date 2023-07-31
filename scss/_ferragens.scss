@@ -147,12 +147,11 @@
         box-shadow: 1px 1px 5px 1px $cor-titulo;
         padding: 1.5rem;
         background-color: #c1c1c1;
-       
 
         @include celular {
-            width: 360px;
-            padding: 1rem;
-            margin-left: 4.2rem;
+            width: 335px;
+            padding: .5rem;
+            // margin-left: 4.2rem;
         }
     }
 
@@ -161,6 +160,13 @@
         justify-content: center;
         align-items: center;
         gap: .5rem;
+
+        @include celular {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: .3rem;
+        }
     }
 
     .ferragens__imgsPeq {
@@ -188,7 +194,7 @@
         width: 300px;
 
         @include celular {
-            width: 280px;
+            width: 260px;
         }
     }
  
@@ -267,6 +273,12 @@
         width: 100%;
         padding-top: 50px;
         padding-bottom: 50px;
+      }
+
+      .gg {
+        display: flex;
+        justify-content: center;
+        background-color: chocolate;
       }
 
       .div-swiper-slider {

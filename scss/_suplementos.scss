@@ -13,6 +13,10 @@
         @include celular {
             height: 110vh;
         }
+
+        @include tablet {
+            height: 100vh;
+        }
 }
 
 .suple__titulo {

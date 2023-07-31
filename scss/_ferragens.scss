@@ -9,6 +9,7 @@
         justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
+        margin: 2.5rem 0rem;
 
         @include celular {
             gap: 2rem;
@@ -19,7 +20,6 @@
         width: 500px;
         display: flex;
         flex-direction: column;
-
     }
 
     .ferragens__info--h3 {

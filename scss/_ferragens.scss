@@ -143,6 +143,7 @@
 
     .ferragens__modal--card {
         width: 400px;
+        height: 450px;
         border-radius: 12px;
         box-shadow: 1px 1px 5px 1px $cor-titulo;
         padding: 1.5rem;
@@ -150,6 +151,7 @@
 
         @include celular {
             width: 335px;
+            height: 370px;
             padding: .5rem;
             // margin-left: 4.2rem;
         }
@@ -282,6 +284,7 @@
 
       .div-swiper-slider {
         height: 110vh;
+     
     
         @include celular {
             height: 82vh;

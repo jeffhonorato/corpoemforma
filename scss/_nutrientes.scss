@@ -11,7 +11,7 @@
     height: 105vh;
 
         @include celular {
-            height: 80vh;;
+            height: 90vh;;
         }
 
         @include tablet {
@@ -98,6 +98,17 @@
 
 .whey .nutri__card--nome {
     font-size: 1.2rem;
+}
+
+.nutri__card--info--h4 {
+    color: #fff;
+    text-align: center;
+    width: 260px;
+    padding-top: 2rem;
+    margin: 0 auto;
+    font-size: 1rem;
+    font-family: $fonte-corpo;
+    
 }
 
 /********* Modal *********/

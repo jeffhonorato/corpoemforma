@@ -1,8 +1,8 @@
 .header {
    
     background: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)),
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)),
 
         url("../img/background-header.jpg");
         background-position: center;
@@ -23,25 +23,38 @@
 
         }
 
+        .logo {
+
+            @include celular {
+                display: grid;
+                place-content: center;
+                height: 100vh;
+                margin: 0 auto;
+            }
+           
+        }
+
         .img__logo {
             width: 350px; /* 150px */
-            position: absolute;
-            top: 70px;
-            left: 20px;
+            
+            // position: absolute;
+            // top: 70px;
+            // left: 20px;
 
                 @include celular {
-                    width: 210px;
-                    position: absolute;
-                    top: 100px;
-                    left: 0px;
+                    // width: 210px;
+                    // position: absolute;
+                    // top: 100px;
+                    // left: 0px;
+                   
                 }
 
-                @include tablet {
-                    width: 340px;
-                    position: absolute;
-                    top: 90px;
-                    left: 30px;
-                }
+                // @include tablet {
+                //     width: 340px;
+                //     position: absolute;
+                //     top: 90px;
+                //     left: 30px;
+                // }
                 
         }
 

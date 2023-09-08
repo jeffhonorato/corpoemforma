@@ -29,6 +29,15 @@
 .contato__img--logo {
     width: 300px;
 }
+
+.contato__dados {
+
+    @include celular {
+        margin: 0rem .6rem;
+    }
+
+}
+
 .contato__dados--titulo {
     font-family: $fonte-titulo;
     color: $cor-corpo;

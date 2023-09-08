@@ -38,6 +38,36 @@
 
     .maquinas__btn {
         background-color: $cor-titulo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .4rem;
+        padding: .5rem;
+        width: 140px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 5px 1px $cor-corpo;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $cor-corpo;
+            transition: all .5s;
+            box-shadow: 1px 1px 5px 1px #fff;
+        }
+
+        &:hover .maquina__menu--nome {
+            color: #000;
+        } 
+
+    }
+
+    .maquina__menu--ico {
+        width: 40px;
+    }
+
+    .maquina__menu--nome {
+        font-family: $fonte-corpo;
+        color: #fff;
+        font-size: 1.2rem;
     }
 
 

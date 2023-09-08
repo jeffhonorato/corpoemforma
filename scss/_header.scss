@@ -15,6 +15,10 @@
             height: 100vh;
         }
 
+        @include tablet {
+            height: 70vh;
+        }
+
         .header__container {
             display: flex;
             justify-content: space-between;
@@ -29,6 +33,13 @@
                 display: grid;
                 place-content: center;
                 height: 100vh;
+                margin: 0 auto;
+            }
+
+            @include tablet {
+                display: grid;
+                place-content: center;
+                height: 60vh;
                 margin: 0 auto;
             }
            
@@ -49,12 +60,12 @@
                    
                 }
 
-                // @include tablet {
-                //     width: 340px;
-                //     position: absolute;
-                //     top: 90px;
-                //     left: 30px;
-                // }
+                @include tablet {
+                    width: 500px;
+                    // position: absolute;
+                    // top: 90px;
+                    // left: 30px;
+                }
                 
         }
 

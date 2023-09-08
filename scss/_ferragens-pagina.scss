@@ -1,0 +1,44 @@
+.maquinas__box {
+
+    .logo__img {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0rem;
+    }
+
+    .logo {
+        width: 340px;
+    }
+
+    background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)),
+
+        url("../img/ferragens/backgroud-maquinas.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100vh;
+
+
+    .maquinas__titulo {
+        color: $cor-corpo;
+        font-family: $fonte-menu;
+        font-size: 2.4rem;
+        text-align: center;
+    }    
+    
+    .maquinas__menu--btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .maquinas__btn {
+        background-color: $cor-titulo;
+    }
+
+
+}

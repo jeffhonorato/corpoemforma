@@ -60,10 +60,16 @@
 
 .contato__end,
 .contato__num,
-.contato__cidade {
+.contato__cidade,
+.contato__ref {
     font-size: 1.3rem;
     font-family: $fonte-menu;
     text-align: center;
+}
+
+.contato__ref {
+    font-size: 1rem;
+    margin-top: .5rem;
 }
 
 .contato__midia--titulo {
@@ -86,7 +92,7 @@
     border-bottom: none 1px solid #fff;
 
         &:hover {
-            border-bottom: 1px solid #fff;
+            width: 48px;
         }
 }
 

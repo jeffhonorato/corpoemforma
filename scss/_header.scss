@@ -1,10 +1,15 @@
 .header {
-    background-image: url("../img/background.jpg");
-    height: 130vh;
-    // background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
+    background: linear-gradient(
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)),
+
+        url("../img/background-header.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        // background-attachment: fixed;
+        background-size: cover;
+        height: 120vh;
 
         @include celular {
             height: 100vh;

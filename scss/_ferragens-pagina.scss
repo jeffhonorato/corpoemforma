@@ -1,6 +1,19 @@
 .maquinas__box {
 
-    padding: 2rem 0rem;
+
+
+    .maquinas__header {
+        background: linear-gradient(
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)),
+    
+            url("../img/ferragens/backgroud-maquinas.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            padding-bottom: 2rem;
+    }
 
     .logo__img {
         display: flex;
@@ -11,18 +24,6 @@
     .logo {
         width: 340px;
     }
-
-    background: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)),
-
-        url("../img/ferragens/backgroud-maquinas.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        // height: 100vh;
-
 
     .maquinas__titulo {
         color: $cor-corpo;
@@ -37,6 +38,7 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
+        margin-bottom: 3rem;
     }
 
     .maquinas__btn {
@@ -73,6 +75,20 @@
         color: #fff;
         font-size: 1.2rem;
     }
+
+    /********** SESSÂO PEITO **********/
+
+    .maquinas__peito {
+
+    }
+
+    .maquinas__nome {
+        text-align: center;
+        font-family: $fonte-titulo;
+        font-size: 2rem;
+        color: $cor-corpo;
+    }
+
 
 
 }

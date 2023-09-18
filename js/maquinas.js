@@ -14,6 +14,17 @@ const peitoCard1 = () => {
     });
 };
 
+const peitoCard2 = () => {
+    const imagensP = document.querySelectorAll(".js-peito-card2-imgP");
+    imagensP.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imagemG = document.querySelector(".js-peito-card2-imgG");
+            imagemG.src = img.src;
+        });
+    });
+};
+
 peitoCard1();
+peitoCard2();
 
 

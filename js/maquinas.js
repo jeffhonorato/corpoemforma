@@ -24,7 +24,18 @@ const peitoCard2 = () => {
     });
 };
 
+const peitoCard3 = () => {
+    const imagensP = document.querySelectorAll(".js-peito-card3-imgP");
+    imagensP.forEach((img) => {
+        img.addEventListener("click", () => {
+            const imagemG = document.querySelector(".js-peito-card3-imgG");
+            imagemG.src = img.src;
+        });
+    });
+};
+
 peitoCard1();
 peitoCard2();
+peitoCard3();
 
 

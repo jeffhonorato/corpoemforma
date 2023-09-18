@@ -181,6 +181,12 @@
         border: 1px solid #fff;
         text-align: center;
         color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            color: #000;
+            transition: all .6s;
+        }
     }
 
 

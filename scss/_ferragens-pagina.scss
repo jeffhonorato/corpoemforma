@@ -1,7 +1,5 @@
 .maquinas__box {
 
-
-
     .maquinas__header {
         background: linear-gradient(
             rgba(0,0,0,0.3),
@@ -91,6 +89,10 @@
         margin-bottom: 3rem;
     }
 
+    .maquina__card {
+        width: 350px;
+    }
+
     .maquina__card--imagens {
         display: flex;
         gap: .3rem;
@@ -123,6 +125,15 @@
         width: 300px;
         border-radius: 8px;
         border: 1px solid #000;
+    }
+
+    .maquina__card--info {
+        background-color: #747474;
+        text-align: center;
+        border: 1px solid $cor-corpo;
+        width: 350px;
+        margin-top: .3rem;
+        
     }
 
 

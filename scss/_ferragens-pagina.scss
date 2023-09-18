@@ -128,12 +128,52 @@
     }
 
     .maquina__card--info {
-        background-color: #585858;
-        text-align: center;
+        background-color: #585858;  
         border: 1px solid $cor-corpo;
         width: 350px;
         margin-top: .3rem;
+        border-radius: 8px;
+        padding: .4rem .5rem;
         
+    }
+
+    .maquina__info--nome {
+        font-family: $fonte-corpo;
+        color: $cor-corpo;
+        font-size: 1.5rem;
+        margin: .5rem 0rem;
+        text-align: center;
+    }
+
+    .maquina__card--infoEsp {
+        font-size: 1.2rem;
+        color: #fff;
+        margin-bottom: .3rem;
+        text-align: center;
+        font-family: $fonte-corpo;
+    }
+
+    .maquina__card--infoP {
+        color: #fff;
+        font-family: $fonte-corpo;
+    }
+
+    .maquina__card--Btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .maquina__card--infoLink {
+        background-color: $cor-titulo;
+        width: 100px;
+        font-size: 1rem;
+        padding: .4rem;
+        font-family: $fonte-menu;
+        border-radius: 8px;
+        border: 1px solid #fff;
+        text-align: center;
+        color: #fff;
     }
 
 

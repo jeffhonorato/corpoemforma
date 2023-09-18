@@ -89,6 +89,14 @@
         margin-bottom: 3rem;
     }
 
+    .maquina__cards {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        gap: 4rem;
+    }
+
     .maquina__card {
         width: 350px;
     }

@@ -12,7 +12,7 @@ const peitoCard1 = () => {
             imagemG.src = img.src;
         });
     });
-}
+};
 
 peitoCard1();
 

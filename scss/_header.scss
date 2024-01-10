@@ -20,9 +20,9 @@
         }
 
         .header__container {
-            display: flex;
-            justify-content: space-between;
-            padding: .5rem;
+            // display: flex;
+            // justify-content: space-between;
+            // padding: .5rem;
             position: relative;
 
         }
@@ -48,9 +48,6 @@
         .img__logo {
             width: 350px; /* 150px */
             
-            // position: absolute;
-            // top: 70px;
-            // left: 20px;
 
                 @include celular {
                     // width: 210px;
@@ -75,7 +72,7 @@
             top: 40px;
             right: 12px;
             cursor: pointer;
-            z-index: 2;
+            z-index: 4;
 
                 @include celular {
                     width: 60px;
@@ -91,24 +88,27 @@
         }
 
         .menu__mobile.desativar {
-            display: none;
+            display: block;
         }
 
         .nav__menu {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             display: grid;
             grid-template-columns: 1fr;
-            justify-items: end;
-            gap: .7rem;
+            place-content: center;
+            justify-items: center;
+            gap: .3rem;
+            // align-items: center;
             
-            position: fixed;
-            top: 85px;
-            right: -10px;
-            display: none;
+            background: rgb(175,175,175);
+            background: linear-gradient(0deg, rgba(175,175,175,1) 0%, rgba(11,11,11,1) 100%);
             animation: show 1s forwards;
             padding: 1rem;
             z-index: 2;  
-            margin-right: 1rem;
-            border-radius: 20%;
            
 
                 @include celular {
@@ -144,15 +144,24 @@
               }
         }
 
+        .nav__item {
+            width: 200px;
+            // background-color: #B81F00;
+            display: flex;
+            justify-content: center;
+           
+        }
+
         .nav__link {
             font-family: $fonte-menu;
             color: #000;
-            font-size: 1rem;
+            font-size: 1.4rem;
             padding: 5px 10px;
             border-bottom-right-radius: 20%;
             box-shadow: 1px 1px 10px #B81F00;
             cursor: pointer;
             background-color: #fff;
+           
 
                 &:hover {
                     box-shadow: 2px 2px 10px #fff;
